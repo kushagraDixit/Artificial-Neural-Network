@@ -1,12 +1,3 @@
-#Artificial Neural network
-
-#Installing Theano
-
-#installing tensorflow
-
-#Installing keras 
-
-#Data Preprocessing
 # Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
@@ -28,8 +19,6 @@ X[:, 2] = labelencoder_X_1.fit_transform(X[:, 2])
 
 onehotencoder = OneHotEncoder(categorical_features = [1])
 X = onehotencoder.fit_transform(X).toarray()
-
-#Removing one dummy variables to avoid dummy variable trap
 X = X[:, 1:]
 
 # Splitting the dataset into the Training set and Test set
